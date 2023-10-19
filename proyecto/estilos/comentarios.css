@@ -1,0 +1,82 @@
+/* ESTAMOS DEFINIENDO EL AUTOCOMPLETADO LA CAJA CORRESPONDIENTE */
+#listados {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+    top: 72%;
+    overflow-y: scroll;
+    border-radius: 3px;
+    display: none;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#listados p {
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 5%;
+}
+
+
+/* ESTAMOS DEFINIENDO EL MAIN  */
+main {
+    min-height: 62.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTAMOS DEFINIENDO ERROR Y COMENTARIOS */
+#comentarios, .error {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+}
+
+#comentarios .col:last-of-type {
+    margin-top: 2%;
+}
+
+#comentarios .col:last-of-type a {
+    margin-left: 2%;
+}
+
+/* ERROR */
+.error {
+    border: red thin solid;
+    background-color: #ffb1c7;
+    color: red;
+}
+
+@media screen and (max-width: 447px) {
+    /* COMENTARIOS */
+    #comentarios .col:last-of-type a, #comentarios .col:last-of-type .btn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 2%;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 447px) and (max-width: 800px) {}
+
+@media screen and (min-width: 800px) and (max-width: 1213px) {
+    /* MAIN */
+    main{
+        min-height: 63.9%;
+    }
+
+    /* FOOTER */
+    footer {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1213px) and (max-width: 1669px) {
+    /* MAIN */
+    main{
+        min-height: 63.6%;
+    }
+
+}

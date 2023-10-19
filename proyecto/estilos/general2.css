@@ -1,0 +1,361 @@
+/* Definimos los componentes basicos del html */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* DEFINIENDO LA CABECERA */
+header {
+    width: 100%; 
+    height: 10%;
+    background-color: #f6faf6;
+    display: flex;
+    justify-content: center;
+}
+
+header article:first-of-type {
+    width: 40%;
+    height: 100%;
+}
+
+header article:first-of-type h3 {
+    text-align: center;
+    color: #16A2FF;
+    font-size: 4em;
+}
+
+header article:first-of-type h3 a {
+    text-decoration: none;
+}
+
+/* ESTAMOS DEFINIENDO EL BUSCADOR DE ESPECTACULOS */
+header .navbar {
+    width: 50%;
+}
+
+header .navbar form {
+    width: 100%;
+}
+
+/* ESTAMOS DEFINIENDO LA PARTE DE LA DERECHA DEL HEADER */
+#registros {
+    text-align: center;
+    width: 50%;
+}
+
+#registros a {
+    width: 18%;
+    display: inline-block;
+    margin-right: 10%;
+}
+
+#registros img {
+    width: 70%;
+    height: auto;
+}
+
+#registros .container-fluid {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#registros .container-fluid a {
+    width: 100%;
+}
+
+/* ESTAMOS DEFINIEDNO UN DROPDOWN */
+.navbar-nav {
+    display: inline-block;
+    text-align: center;
+    margin-top: 6%;
+}
+
+/* ESTAMOS DEFINIENDO LA NAVEGACION */
+nav {
+    background-color: #118C5B;
+    height: auto;
+}
+
+nav .nav-item {
+    margin-right: 5%;
+}
+
+nav .nav-link {
+    font-size: 1.2em;
+    color: aliceblue;
+}
+
+/* ESTAMOS DEFINIENDO LA BARRA DE UBICACION */
+#barraubi{
+    width: 90%;
+    text-align: left;
+	background-color: #F7F7F7;
+    margin: 2% 5% 2% 5%;
+}
+
+#barraubi a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1%;
+    color: black;
+    font-size: 1.2em;
+	color: #8A6D3B;
+}
+
+/* ESTAMOS DEFINIENDO EL FOOTER */
+footer {
+    background-color: #118C5B;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.footer-section-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 5%;
+}
+
+footer .footer-section-2 p{
+    color: #333;
+}
+
+footer ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .copy hr{
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+footer .copy p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0%;
+}
+
+@media screen and (max-width: 447px){
+    /* HEADER */
+    header{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header article:first-of-type{
+        width: 100%;
+    }
+
+    header .navbar{
+        width: 100%;
+    }
+
+    header .navbar .d-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navbar .d-flex button{
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    header #registros{
+        width: 100%;
+        margin: 1% 0% 2% 0%;
+        text-align: center;
+    }
+
+    header #registros a {
+        display: inline-block;
+    }
+
+    header #registros img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NAVEGADOR */
+    nav {
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* BARRA DE UBICACION */
+    #barraubi{
+        width: 100%;
+        margin: 2% 0% 2% 0%;
+    }
+
+    /* FOOTER */
+    footer{
+        text-align: center;
+        height: auto;
+    }
+
+    footer .footer-section-1{
+        width: 100%;
+        display: inline-block;
+    }
+
+    footer .footer-section-1 .footer-section-2 ul{
+        padding: 0%;
+    }
+}
+
+@media screen and (min-width: 447px) and (max-width: 800px){
+    /* HEADER */
+    header{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header #imagen{
+        width: 100%;
+        height: auto;
+    }
+
+    header .navbar{
+        width: 100%;
+    }
+
+    header .navbar .d-flex{
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+    }
+
+    header .navbar .d-flex input{
+        width: 75%;
+    }
+
+    header .navbar .d-flex button{
+        width: 25%;
+        vertical-align: middle;
+    }
+
+    header #registros{
+        width: 100%;
+        margin: 1% 0% 1% 0%;
+        text-align: center;
+    }
+
+    header #registros a {
+        display: inline-block;
+    }
+
+    header #registros img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* NAV */
+    nav{
+        height: auto;
+        text-align: center;
+    }
+
+    nav ul{
+        align-items: center;
+    }
+
+    nav ul li{
+        width: 40%;
+        text-align: center;
+    }
+
+    /* BARRA DE UBICACION */
+    #barraubi{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    /* FOOTER */
+    footer{
+        height: auto;
+    }
+
+    footer .footer-section-1 .footer-section-2 ul{
+        padding: 0%;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1213px){
+    /* HEADER */
+    header{
+        height: auto;
+        align-items: center;
+    }
+
+    header #registros img {
+        width: 100%;
+        height: auto;
+    }
+    
+    header #registros{
+        width: 50%;
+    }
+
+    #barraubi{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    /* FOOTER */
+    footer{
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1213px) and (max-width: 1669px){
+    /* HEADER */
+    header{
+        align-items: center;
+        height: auto;
+    }
+    
+    header #registros{
+        width: 50%;
+    }
+
+    header #registros a img{
+        width: 100%;
+        height: auto;
+    }
+
+    #registros a img {
+        width: 50%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    footer{
+        height: auto;
+    }
+}

@@ -1,0 +1,322 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    width: 100%;
+    background-color: #f6faf6;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header #imagen {
+    width: 50%;
+    height: 100%;
+}
+
+#imagen h3 {
+    margin-top: 0.5%;
+    text-align: center;
+    color: #16A2FF;
+    font-size: 4em;
+    margin-left: 2%;
+}
+
+#registros {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+#registros a {
+    width: 18%;
+    display: inline-block;
+    margin-right: 10%;
+}
+
+header #registros img {
+    width: 55%;
+    height: auto;
+}
+
+#registros .container-fluid{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#registros .container-fluid a {
+    width: 100%;
+}
+
+#imagen h3 a {
+    text-decoration: none;
+}
+
+/* ESTAMOS DEFINIENDO LA NAVEGACION DE NUESTRA PAGINA WEB */
+nav{
+    background-color: #118C5B;
+}
+
+nav .nav-item{
+    margin-right: 5%;
+}
+
+nav .nav-link {
+    font-size: 1.2em;
+    color: aliceblue;
+}
+
+main{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 5% 30% 5% 25% 30% 5%;
+    grid-template-rows: auto auto auto auto auto;
+    align-content: flex-start;
+}
+
+
+@keyframes cabecera {
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+  }
+
+/* AQUÍ ESTAMOS DEFINIENDO EL FIGURE */
+figure{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    animation: imagen 4s normal;
+}
+
+@keyframes imagen {
+    0% {
+        margin-left: -150%;
+        transform: rotateX(360deg);
+    }
+
+    100%{
+        margin-left: 0%;
+    }
+}
+
+/* AQUÍ ESTAMOS DEFINIENDO EL ASIDE Y EL SECTION */
+aside {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    animation: contenido 4s normal;
+}
+
+section{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    animation: contenido 4s normal;
+}
+
+@keyframes contenido {
+    0%{
+        filter: hue-rotate(260deg);
+        opacity: 0%;
+        transform: rotateX(90deg);
+    }
+
+    100%{
+        filter: hue-rotate(0deg);
+        transform: rotateX(0deg);
+        opacity: 100%;
+    }
+}
+
+aside article, section article{
+    font-size: 1.2em;
+}
+
+aside article h3, section article h3{
+    text-align: center;
+    color:#00AAAA;
+    background-color:bisque;
+}
+
+aside article p, section article ul{
+    color:darkslateblue;
+    font-weight: bold;
+}
+
+aside article p span, section article ol{
+    color: darkgoldenrod;
+    font-weight: 900;
+}
+
+/* VAMOS A HACER LA PAGINA RESPONSIVE */
+
+@media screen and (max-width: 400px){
+    header{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header #imagen{
+        width: 100%;
+    }
+
+    #imagen h3{
+        text-align: center;
+    }
+
+    #registros{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    #registros .container-fluid, #registros .nav-item button, #registros a:last-of-type{
+        display: block;
+        margin: auto;
+    }
+
+    header #registros img {
+        width: 100%;
+        height: auto;
+    }
+
+    #registros .container-fluid{
+        margin-bottom: 2%;
+    }
+
+    nav{
+        height: auto;
+    }
+    
+    nav .nav {
+        display: block;
+        margin: auto;
+    }
+
+    nav .nav .nav-item{
+        text-align: center;
+    }
+
+    figure {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    aside {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    section{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 900px){
+    header{
+        height: auto;
+    }
+
+    header #registros img {
+        width: 100%;
+        height: auto;
+    }
+
+    #registros .container-fluid, #registros .nav-item button, #registros a:last-of-type{
+        display: block;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+
+    figure {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    aside {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    section{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px){
+    header{
+        height: auto;
+    }
+
+    figure {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    aside {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    section{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+
+    header #registros{
+        text-align: center;
+    }
+
+    header #registros a{
+        width: 20%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

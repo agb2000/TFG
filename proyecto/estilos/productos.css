@@ -1,0 +1,339 @@
+header {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* ESTAMOS DEFINIENDO EL AUTOCOMPLETADO LA CAJA CORRESPONDIENTE */
+#listados{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    overflow-y: scroll;
+    border-radius: 3px;
+    display: none;
+    border: 1px solid black;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+#listados p {
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 5%;
+}
+
+/* ESTAMOS DEFINIENDO EL MAIN  */
+main {
+    min-height: 62.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTAMOS DEFINIENDO EL MOSTRAR TODOS LOS PRODUCTOS DE LA PAGINA WEB */
+#mostrar_productos {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0% 5% 0% 5%;
+}
+
+#mostrar_productos .card {
+    width: 20%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.61);
+}
+
+#mostrar_productos .card img{
+    width: 100%;
+    height: auto;
+}
+
+#mostrar_productos .card-body div{
+    width: 100%;
+    height: 30%;
+}
+
+#mostrar_productos .card-body input[type=button] {
+    width: 90%;
+}
+
+#titulo {
+    width: 90%;
+    margin: 1% 5% 1% 5%;
+    text-align: center;
+    color: black;
+    background-color: #F7F7F7;
+    font-size: 2em;
+}
+
+/* TABLA DE COMPRAS  */
+#tabla_compras {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+#tabla_compras td{
+	width: 1%;
+}
+
+.crudImagen{
+    width: 50%;
+    height: auto;
+    display: block;
+	margin: 0 auto;
+}
+
+.total {
+    margin-left: 5%;
+}
+
+/* ESTAMOS DEFINIENDO UNA CAJA DONDE MOSTRAREMOS LOS ERRORES */
+.error {
+    border: red thin solid;
+    background-color: #ffb1c7;
+    color: red;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    text-align: left;
+}
+
+/* RESUMEN DE COMPRAS REALIZADAS */
+#resumen{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1% 10% 0% 10%;
+}
+
+#resumen div{
+    width: 25%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.61);
+}
+
+#botones a{
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+@media screen and (max-width: 447px){
+
+    /* MOSTRAR PRODUCTOS */
+    #mostrar_productos{
+        flex-direction: column;
+        margin-bottom: 2%;
+    }
+
+    #mostrar_productos .card{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    #titulo{
+        margin-top: 3%;
+        margin-bottom: 1%;
+    }
+
+    /* MAIN VER_ENTRADAS */
+    #tabla_compras td{
+        width: auto;
+    }
+
+    #tabla_compras tr th{
+        display: none;
+    }
+
+    #tabla_compras tr td{
+        display: block;
+        margin: auto 0;
+        border: 0px;
+    }
+
+    /* RESUMEN */
+    #resumen{
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    #resumen div{
+        width: 100%;
+        margin: 0%;
+        text-align: center;
+        margin-bottom: 4%;
+    }
+
+    #botones a{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+} 
+
+@media screen and (min-width: 447px) and (max-width: 700px){
+    /* MOSTRAR PRODUCTOS */
+    #mostrar_productos{
+        flex-direction: row;
+        margin: 0% 5% 2% 5%;
+    }
+
+    #mostrar_productos .card{
+        width: 50%;
+        margin: 0%;
+        margin-bottom: 10%;
+    }
+
+    #titulo{
+        margin-top: 3%;
+        margin-bottom: 1%;
+    }
+
+    /* TABLA COMPRAS */
+    #tabla_compras td{
+        width: auto;
+    }
+
+    #tabla_compras tr th{
+        display: none;
+    }
+
+    #tabla_compras tr td{
+        display: block;
+        margin: auto 0;
+        border: 0px;
+    }
+
+    /* RESUMEN */
+    #resumen{
+        width: 98%;
+        margin: 0% 0% 0% 1%;
+    }
+    
+    #resumen div{
+        width: 100%;
+        margin: 0%;
+        text-align: center;
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1112px){
+    /* MAIN */
+    main{
+        min-height: 63.9%;
+    }
+    
+    #tabla_compras, .error{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .crudImagen{
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* MOSTRAR PRODUCTOS */
+    #mostrar_productos{
+        flex-direction: row;
+        margin: 0% 5% 2% 5%;
+        flex-wrap: wrap;
+    }
+
+    #mostrar_productos .card{
+        width: 30%;
+        margin: 0%;
+        margin-right: 2%;
+        margin-bottom: 10%;
+    }
+
+    #titulo{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    /* RESUMEN */
+    #resumen{
+        width: 98%;
+        margin: 0% 0% 0% 1%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #resumen div{
+        width: 48%;
+        margin: 0% 0% 4% 0%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1112px) and (max-width: 1700px){
+    /* MAIN */
+    main{
+        min-height: 63.9%;
+    }
+
+    /* MOSTRAR PRODUCTOS */
+    #mostrar_productos{
+        flex-direction: row;
+        margin: 0% 5% 2% 5%;
+        flex-wrap: wrap;
+    }
+    
+    #mostrar_productos .card{
+        width: 24%;
+        margin-right: 2%;
+        margin-bottom: 7%;
+    }
+    
+    #titulo{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    #registros a img {
+        width: 50%;
+        height: auto;
+    }
+
+    .crudImagen{
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* RESUMENES DE COMPRAS */
+    #resumen{
+        width: 98%;
+        margin: 0% 0% 0% 1%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #resumen div{
+        width: auto;
+        margin: 0% 0% 4% 0%;
+        text-align: center;
+    }
+}

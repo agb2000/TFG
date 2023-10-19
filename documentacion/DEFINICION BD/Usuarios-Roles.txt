@@ -1,0 +1,14 @@
+Vamos a mostrar los usuarios principales de nuestra aplicacion con su contraseña:
+	1. admin = admin. Tiene asignado el role de administrador.
+	2. agb_2000 = alberto. Tiene asignado el role de administrador.
+	3. juan_25 = juan_25. Tiene asignado el role de normal.
+	4. merche = merche. Tiene asignado el role de normal.
+	5. prueba = prueba. Tiene asignado el role de normal.
+
+El usuario que hemos creado en el phpmyadmin y ese usuario lo hemos enlazado para que solo tenga acceso ese usuario
+    usuario = proyecto_final
+    contraseña = proyecto_final
+
+En mi aplicacion web solo tenemos dos roles:
+	1. Administrador =  El cual se encarga de la gestion de datos de la aplicacion, crear temas foros y borrar_comentarios.
+	2. Normal =  El cual se encarga de comprar productos, comprar entradas y visualizar las entradas y compras que ha realizado.

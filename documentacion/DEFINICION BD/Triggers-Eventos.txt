@@ -1,0 +1,16 @@
+En el phpMyAdmin he creado tres eventos que se encarga de  las siguientes funcionamiento:
+
+	1. ACTUALIZAR_ESPECTACULOS = El cual se encarga de comprobar cada segundo si la fecha actual es mayor que la fecha 
+		de finalizacion del espectaculo automaticamente se ponemos el campo borrado a true.
+	2. ACTUALIZAR_SESION_1 = El cual se encarga de comprobar cada segundo de que si la fecha actual supera la fecha de
+		la sesion automaticamente ponemos el campo borrado a true.
+	3. ACTUALIZAR_SESION_2 = El cual se encarga de comprobar cada segundo de que si la fecha actual supera la fecha de
+		la sesion y el tiempo actual supera la hora inicio de la sesion automaticamente ponemos el campo borrado a true.
+
+En el phpMyAdmin he creado dos triggers que se encarga de  las siguientes funcionamiento:
+	
+	1. AI_CONTENIDO_FORO = El cual se encarga de actualizar el contador de contenido foro sumandolo mas uno cada vez que
+		creamos un contenido en un foro.
+	2. AI_VENTAS_PRODUCTOS =  El cual se encarga de actualziar el numero de unidades del producto cada vez que realizamos
+		una compra.
+

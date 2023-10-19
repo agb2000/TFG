@@ -1,0 +1,626 @@
+/* ESTAMOS DEFINIENDO EL AUTOCOMPLETADO LA CAJA CORRESPONDIENTE */
+#listados {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+    top: 72%;
+    overflow-y: scroll;
+    border-radius: 3px;
+    display: none;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#listados p {
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 5%;
+}
+
+/* ESTAMOS DEFINIENDO EL MAIN  */
+main {
+    min-height: 62.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTAMOS DEFINIENDO EL VER ESPECTACULOS QUE NOS HA SACADO EL BUSCADOR */
+#ver_espectaculos {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    height: auto;
+}
+
+.espe {
+    width: 60%;
+    height: auto;
+    margin: 2% 20% 2% 20%;
+    border: 1px solid black;
+    display: flex;
+    border: 1px solid #D2D2D2;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.61);
+}
+
+.imagen {
+    width: 20%;
+    border-right: 1px solid gray;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.contenido {
+    width: 80%;
+}
+
+.contenido h2 {
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.contenido p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contenido button {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.contenido a{
+    text-decoration: none;
+}
+
+/* ESTAMOS DEFINIENDO LA INFORMACION DE LOS ESPECTACULOS */
+#Informacion {
+    width: 80%;
+    margin: 2% 10% 2% 10%;
+    display: flex;
+    border: 1px solid #D2D2D2;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.61);
+    border-radius: 5px;
+}
+
+#Informacion div:first-child {
+    width: 60%;
+}
+
+#Informacion div:first-child img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#Informacion div:last-of-type {
+    width: 100%;
+}
+
+#Informacion div:last-of-type h3, #Informacion div:last-of-type p, 
+#Informacion div:last-of-type label {
+    font-size: 2em;
+    text-align: left;
+}
+
+#Informacion div:last-of-type label {
+    width: 50%;
+    font-weight: 700;
+    text-align: center;
+}
+
+#Informacion div:last-of-type label:last-of-type{
+    width: 100%;
+}
+
+#Informacion div:last-of-type p{
+    text-align: center;
+}
+
+/* Estamos mostrando las sesiones disponibles */
+#sesiones {
+    display: inline-block;
+    text-align: center;
+    margin: 1% 10% 0% 10%;
+    width: 80%;
+    height: 30%;
+}
+
+#sesiones h2 {
+    width: 100%;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.61);
+}
+
+#sesiones .card {
+    display: inline-block;
+    margin: 1% 1% 0% 1%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.61);
+    background-color: #17A2B8;
+}
+
+#sesiones .card h5 {
+    width: 100%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+/* ESTAMOS DEFINIENDO LA CAJA DE COMENTARIOS */
+#anadir_comentario{
+    margin: 2% 0% 2% 0%;
+}
+
+.comentario {
+    border: 1px solid #ccc;
+    margin-bottom: 2%;
+    width: 90%;
+    height: auto;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.61);
+}
+
+.comentario label, .comentario hr, .comentario h4, .comentario {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 500;
+}
+
+.comentario h4 {
+    width: 90%;
+    text-align: center;
+}
+
+/* PAGINADOR PARA EL COMENTARIO */
+.pager {
+    background-color: white;
+    color: black;
+}
+
+.pager .izq {
+    float: left;
+    padding-left: 5px;
+    color: green;
+}
+
+.pager .der {
+    float: right;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.pager .der a {
+    text-decoration: none;
+    color: green;
+}
+
+.pager .der a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.pager .final {
+    clear: both;
+}
+
+@media screen and (max-width: 447px) {
+    /* INFORMACION DEL ESPECTACULO */
+    #Informacion {
+        width: 95%;
+        margin: 4% 2.5% 4% 2.5%;
+        border: 0px;
+        box-shadow: none;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #Informacion div:first-of-type {
+        width: 100%;
+        height: auto;
+    }
+
+    #Informacion div:first-of-type img {
+        width: 80%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    #Informacion div:last-of-type {
+        width: 100%;
+        height: auto;
+    }
+
+    #Informacion div:last-of-type h3, #Informacion div:last-of-type label, 
+    #Informacion div:last-of-type p{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* SESIONES DISPONIBLES */
+    #sesiones {
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        text-align: center;
+    }
+
+    #sesiones h2 {
+        border-radius: 15px;
+        height: 20%;
+    }
+
+    #sesiones .card {
+        width: 95%;
+    }
+
+    /* LA CAJA DE COMENTARIOS */
+    #anadir_comentario{
+        margin: 2% 0% 4% 0%;
+    }
+
+    .comentario{
+        width: 95%;
+        margin: 0% 2.5% 5% 2.5%;
+    }
+
+    /* PAGINADOR */
+    .pager{
+        width: 90%;
+        margin: 0% 5% 0% 5%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pager div {
+        display: block;
+        margin: auto 0;
+    }
+
+    /* VER ESPECTACULOS DEL BUSCADOR*/
+    #ver_espectaculos {
+        width: 100%;
+        margin: 2% 0% 0% 0%;
+        height: auto;
+    }
+
+    .espe {
+        width: 100%;
+        margin: 0% 0% 5% 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        margin-top: 1%;
+        width: 30%;
+        height: auto;
+        border-right: 1px solid gray;
+    }
+
+    .imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    .contenido h2, .contenido p {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+   .contenido button {
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (min-width: 447px) and (max-width: 800px) {
+
+    /* INFORMACION DEL ESPECTACULO */
+    #Informacion {
+        width: 100%;
+        margin: 5% 0% 5% 0%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #Informacion div:first-of-type , #Informacion div:last-of-type{
+        width: 100%;
+        height: auto;
+    }
+
+    #Informacion div:first-of-type img {
+        width: 70%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    #Informacion div:last-of-type p{
+        text-align: center;
+        height: auto;
+    }
+
+    #Informacion div:last-of-type > div{
+        text-align: center;
+    }
+
+    #Informacion div:last-of-type label {
+        width: 100%;
+    }
+
+    /* SESIONES DISPONIBLES */
+    #sesiones {
+        width: 100%;
+        height: auto;
+        margin: 0%;
+        text-align: center;
+    }
+
+    #sesiones h2 {
+        border-radius: 15px;
+        margin-bottom: 5%;
+    }
+
+    #sesiones .card {
+        width: 65%;
+        margin: 0%;
+    }
+
+    #sesiones .card .btn {
+        width: 39%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* COMENTARIO */
+    .comentario{
+        width: 95%;
+        margin: 0% 2.5% 5% 2.5%;
+    }
+
+    .comentario label{
+        width: 40%;
+        text-align: center;
+    }
+
+    /* VER ESPECTACULOS DEL BUSCADOR */
+    #ver_espectaculos {
+        width: 100%;
+        margin: 2% 0% 0% 0%;
+        height: auto;
+    }
+
+    .espe {
+        width: auto;
+        margin: 0% 13% 5% 13%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        margin-top: 1%;
+        width: 40%;
+        height: auto;
+        border-right: 1px solid gray;
+    }
+
+    .imagen img, .contenido {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido h2, .contenido p {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+   .contenido button {
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1213px) {
+    /* VER ESPESTACULOS DEL BUSCADOR */
+    #ver_espectaculos {
+        width: 80%;
+        margin: 2% 10% 0% 10%;
+        height: auto;
+    }
+
+    .espe {
+        width: auto;
+        margin: 0% 5% 2% 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .imagen {
+        width: 40%;
+        height: auto;
+        border-right: 1px solid gray;
+    }
+
+    .imagen img, .contenido {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido h2, .contenido p {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+   .contenido button {
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+
+    /* MAIN */
+    main{
+        min-height: 63.8%;
+    }
+
+    /* INFORMACION DE LOS ESPECTACULOS */
+    #Informacion {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #Informacion div:first-child {
+        width: 80%;
+        height: auto;
+    }
+
+    #Informacion div:first-child img {
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    /* SESIONES */
+    #sesiones {
+        width: 95%;
+        height: auto;
+        margin: 0% 2.5% 0% 2.5%;
+        text-align: center;
+    }
+
+    #sesiones .card {
+        width: 65%;
+        margin-bottom: 5%;
+    }
+
+    #sesiones .card h5 {
+        text-align: center;
+        width: auto;
+        margin-bottom: 2%;
+        border: none;
+    }
+
+    #sesiones .card .btn {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1213px) and (max-width: 1669px) {
+    /* MAIN */
+    main{
+        min-height: 63.5%;
+    }
+
+    /*  VER ESPESTACULOS */
+    #ver_espectaculos {
+        width: 90%;
+        margin: 2% 5% 0% 5%;
+        height: auto;
+    }
+
+    .espe {
+        width: auto;
+        margin: 0% 15% 2% 15%;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+    }
+
+    .imagen {
+        width: 30%;
+        height: auto;
+        border-right: 1px solid gray;
+    }
+
+    .imagen img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido h2, .contenido p {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+   .contenido button {
+        margin-bottom: 2%;
+    }
+
+    /* INFORMACION */
+    #Informacion {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #Informacion div:first-child {
+        width: auto;
+        height: 30%;
+    }
+
+    #Informacion div:first-child img {
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    #Informacion #titulo {
+        width: 100%;
+        height: auto;
+        margin-left: 2%;
+    }
+
+    #titulo h3,#titulo label, #titulo label:last-of-type {
+        width: 100%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    /* SESIONES */
+    #sesiones {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: auto;
+        text-align: center;
+    }
+
+    #sesiones .card {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    #sesiones .card h5 {
+        text-align: center;
+        width: auto;
+        margin-bottom: 2%;
+        border: none;
+    }
+
+    #sesiones .card .btn {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+}

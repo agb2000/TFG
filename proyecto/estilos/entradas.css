@@ -1,0 +1,352 @@
+/* ESTAMOS DEFINIENDO EL AUTOCOMPLETADO LA CAJA CORRESPONDIENTE */
+#listados {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+    top: 72%;
+    overflow-y: scroll;
+    border-radius: 3px;
+    display: none;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#listados p {
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 5%;
+}
+
+/* ESTAMOS DEFINIENDO EL MAIN  */
+main {
+    min-height: 62.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTAMOS DEFINIENDO LAS BUTACAS */
+#info_butacas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#butacas {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.asientos {
+    width: 6%;
+    height: 6%;
+    padding: 2%;
+    background-color: #ccc;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 2%;
+    color: black;
+}
+
+#info_asiento {
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+
+#info_asiento .btn {
+    display: block;
+    margin: 0 auto;
+}
+
+#info_asiento a {
+    text-decoration: none;
+}
+
+#info_asiento h3{
+    text-align: center;
+}
+
+#entradas {
+    text-align: center;
+}
+
+/* Definiendo los resumenes de la compra de entradas*/
+#resumen {
+    width: 80%;
+    height: auto;
+    margin: 1% 10% 0% 10%;
+}
+
+#resumen h1 {
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid black;
+}
+
+#resumen_info {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#botones a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+/* ERROR */
+.error {
+    border: red thin solid;
+    background-color: #ffb1c7;
+    color: red;
+    width: 96%;
+    margin: 0% 2% 0% 2%;
+    text-align: left;
+}
+
+@media screen and (max-width: 447px) {
+
+    /* BUTACAS */
+    #info_butacas {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    #butacas {
+        width: 100%;
+    }
+    
+    .asientos {
+        width: 20%;
+        height: auto;
+        background-color: #ccc;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 2%;
+        text-align: center;
+    }
+    
+    #info_asiento {
+        width: 100%;
+        float: none;
+        margin: 2% 0% 2% 0%;
+    }
+
+    #info_asiento div:first-of-type{
+        text-align: center;
+    }
+    
+    #info_asiento .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #info_asiento a {
+        text-decoration: none;
+    }
+
+    /* ESTAMOS MOSTRANDO EL RESUMEN DE LA PAGINA */
+    #resumen {
+        width: 100%;
+        margin: 0%;
+    }
+
+    #resumen_info {
+        text-align: left;
+    }
+    
+    #botones a{
+        width: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (min-width: 447px) and (max-width: 800px) {
+
+    /* ESTAMOS MOSTRANDO EL RESUMEN DE LA PAGINA */
+    #resumen {
+        width: 100%;
+        margin: 0%;
+    }
+
+    #resumen_info {
+        text-align: center;
+    }
+
+    #botones{
+        width: 100%;
+    }
+    
+    #botones a{
+        text-align: center;
+    }
+
+    /* BUTACAS */
+    #info_butacas {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    #butacas {
+        width: 100%;
+    }
+    
+    .asientos {
+        width: 15%;
+        height: auto;
+        background-color: #ccc;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 2%;
+        text-align: center;
+    }
+    
+    #info_asiento {
+        width: 100%;
+        float: none;
+        margin: 2% 0% 2% 0%;
+    }
+
+    #info_asiento div:first-of-type{
+        text-align: center;
+    }
+    
+    #info_asiento .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #info_asiento a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1213px) {
+    /* MAIN */
+    main{
+        min-height: 63.9%;
+    }
+
+    /* ESTAMOS MOSTRANDO EL RESUMEN DE LA PAGINA */
+   #resumen {
+        width: 80%;
+        height: auto;
+        margin: 1% 10% 0% 10%;
+    }
+
+    #resumen_info {
+        text-align: center;
+    }
+
+    #botones{
+        width: 100%;
+    }
+
+    #botones a{
+        text-align: center;
+    }
+
+    /* BUTACAS */
+    #info_butacas {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+    
+    #butacas {
+        width: 48%;
+        margin-bottom: 2%;
+    }
+    
+    .asientos {
+        width: 20%;
+        height: auto;
+        background-color: #ccc;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    #info_asiento {
+        width: 48%;
+        float: none;
+        margin: 2% 0% 2% 0%;
+    }
+
+    #info_asiento div:first-of-type{
+        text-align: center;
+    }
+    
+    #info_asiento .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #info_asiento a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1213px) and (max-width: 1669px) {
+    /* MAIN */
+    main{
+        min-height: 63.6%;
+    }
+
+    /* BUTACAS */
+    #info_butacas {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+    
+    #butacas {
+        width: 48%;
+        margin-bottom: 2%;
+    }
+    
+    .asientos {
+        width: 14%;
+        height: auto;
+        background-color: #ccc;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    #info_asiento {
+        width: 48%;
+        float: none;
+        margin: 2% 0% 2% 0%;
+    }
+
+    #info_asiento div:first-of-type{
+        text-align: center;
+    }
+    
+    #info_asiento .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #info_asiento a {
+        text-decoration: none;
+    }
+    
+}

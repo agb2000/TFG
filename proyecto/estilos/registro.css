@@ -1,0 +1,361 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: arial, 12;
+}
+
+/*  ESTAMOS DEFINIENDO LA CABECERA DE NUESTRA APLICACION */
+header{
+    width: 100%;
+    background-color:#f6faf6;
+    height: auto;
+}
+
+header h3{
+    text-align: center;
+    color: #16A2FF;
+    font-size: 4em;
+    margin-left: 2%;
+}
+
+/* ESTAMOS DEFINIENDO LA BARRA DE UBICACION */
+#barraubi{
+    width: 90%;
+    height: 7%;
+    text-align: left;
+	background-color: #F7F7F7;
+	margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+#barraubi a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1%;
+    color: black;
+    font-size: 1.2em;
+	color: #8A6D3B;
+}
+
+/* ESTAMOS DEFINIENDO EL MAIN */
+main{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/* ESTAMOS DEFINIENDO EL LOGIN*/
+#login{
+    width: 50%;
+    border-radius: 10px;
+    background-color: #12192C;
+    height: 60%;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+#titulo {
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.col-11{
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+.col-11 label, .col-md-5 label{
+    color: white;
+    font-size: 1.2em;
+}
+
+.col-11 input{
+    font-size: 1.2em;
+}
+
+.col-11 .btn{
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.col-12{
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 5%;
+}
+
+/* ESTAMOS DEFINIENDO EL REGISTRAR USUARIO */
+#registrar{
+    width: 70%;
+    border-radius: 10px;
+    background-color: #12192C;
+    height: auto;
+    display: inline-block;
+}
+
+#registrar .col-md-5{
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+#registrar .col-md-6{
+    width: 41.7%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#registrar .col-md-6 input[type=submit]{
+    display: inline-block;
+    margin-right: 5%;
+    width: 30%;
+}
+
+#registrar .col-md-6 .btn:last-of-type{
+    margin-top: 5%;
+    width: 30%;
+}
+
+.error {
+    border: red thin solid;
+    background-color: #ffb1c7;
+    color: red;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: left;
+}
+
+/* Hacemos el responsive para el movil */
+@media screen and (max-width: 460px) {
+    main{
+        width: 100%;
+    }
+
+    #login{
+        width: 90%;
+        height: auto;
+    }
+
+    #barraubi{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #barraubi a{
+        margin-top: 2.5%;
+    }
+
+    #registrar{
+        width: 90%;
+    }
+
+    #titulo{
+        margin-top: 7%;
+    }
+
+    #registrar .col-md-5{
+        width: 90%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #registrar .col-md-5{
+        text-align: center;
+    }
+
+    #registrar .col-md-5 input{
+        width: 90%;
+        margin-left: 11%;
+    }
+
+    #registrar .col-md-6{
+        width: 90%;
+    }
+
+    #registrar .col-md-6 input[type=submit], #registrar .col-md-6 .btn{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .error{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (min-width:460px) and (max-width:640px){
+    #login{
+        width: 80%;
+        height: auto;
+    }
+
+    #barraubi a{
+        margin-top: 2.5%;
+    }
+
+    #registrar{
+        width: 90%;
+    }
+
+    #registrar form{
+        margin-right: 0%;
+    }
+
+    #titulo{
+        margin-top: 7%;
+    }
+
+    #registrar .col-md-5{
+        width: 90%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #registrar .col-md-5{
+        text-align: center;
+    }
+
+    #registrar .col-md-5 input{
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    #registrar .col-md-6{
+        width: 90%;
+    }
+
+    #registrar .col-md-6 input[type=submit]{
+        width: auto;
+        margin-bottom: 5%;
+    }
+
+    #registrar .col-md-6 a .btn{
+        width: auto;
+        vertical-align: top;
+    }
+
+    .error{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:900px){
+    #login{
+        width: 70%;
+        height: auto;
+    }
+
+    #barraubi a{
+        margin-top: 1.5%;
+    }
+
+    #registrar{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    #registrar form{
+        margin-right: 0%;
+    }
+
+    #titulo{
+        margin-top: 7%;
+    }
+
+    #registrar .col-md-5{
+        width: 90%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #registrar .col-md-5{
+        text-align: center;
+    }
+
+    #registrar .col-md-5 input{
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    #registrar .col-md-6{
+        width: 90%;
+    }
+
+    #registrar .col-md-6 input[type=submit]{
+        width: auto;
+        margin-bottom: 5%;
+    }
+
+    #registrar .col-md-6 a .btn{
+        width: auto;
+        border: 1px solid red;
+        vertical-align: top;
+    }
+
+    .error{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1255px){
+    #login{
+        width: 60%;
+    }
+
+    #barraubi a{
+        margin-top: 0.5%;
+    }
+
+    #registrar{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+     #registrar form{
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+
+    #titulo{
+        margin-top: 2%;
+    }
+
+    #registrar .col-md-6{
+        width: 90%;
+    }
+
+    #registrar .col-md-6:last-of-type .btn{
+        margin-top: 2%;
+    }
+
+}
+
+
+
