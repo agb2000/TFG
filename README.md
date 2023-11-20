@@ -3,6 +3,6 @@ Este repositorio guarda mi Proyecto de Fin de Grado y se trata de una pagina de 
 Este foro esta realizado por las siguientes tecnologias:
   * HTML
   * CSS / BOOTSTRAP
-  * JAVASCRIPT
+  * JAVASCRIPT / JQUERY
   * PHP
     
